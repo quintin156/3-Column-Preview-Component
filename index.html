@@ -1,69 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <link rel="stylesheet" href="style.css">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <title>Frontend Mentor | 3-column preview card component</title>
-  
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brightOrange: 'hsl(31, 77%, 52%)',
-            darkCyan: 'hsl(184, 100%, 22%)',
-            veryDarkCyan: 'hsl(179, 100%, 13%)',
-            transparent: 'hsla(0, 0%, 100%, 0.75)',
-            veryLightGray: 'hsl(0, 0%, 95%)'
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | 3-column preview card component</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brightOrange: "hsl(31, 77%, 52%)",
+              darkCyan: "hsl(184, 100%, 22%)",
+              veryDarkCyan: "hsl(179, 100%, 13%)",
+              transparentColor: "hsla(0, 0%, 100%, 0.75)",
+              veryLightGray: "hsl(0, 0%, 95%)",
+            },
+            fontFamily: {
+              lexendDeca: ["Lexend Deca", "sans-serif"],
+              bigShoulder: ["Big Shoulders Display", "cursive"],
+            },
           },
-          fontFamily: {
-            'lexendDeca': ['Lexend Deca', 'sans-serif'],
-            'bigShoulder': ['Big Shoulders Display', 'cursive']
-          }
-        }
-      }
-    }
-  </script>
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-veryLightGray font-lexendDeca">
+    <main
+      class="flex flex-col items-center justify-center m-5 lg:w-full lg:h-screen lg:flex-row lg:m-0"
+    >
+      <!-- Sedans -->
+      <div
+        class="box-1 w-[300px] h-[500px] sm:h-[450px] bg-brightOrange sm:rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none p-8"
+      >
+        <div class="icon">
+          <img src="images/icon-sedans.svg" alt="icon" />
+        </div>
 
-</head>
-<body>
-  <main class="flex flex-col items-center justify-center m-5 lg:w-full lg:h-screen lg:flex-row lg:m-0 ">
+        <div class="heading text-4xl font-bigShoulder text-veryLightGray mt-10">
+          <h1>SEDANS</h1>
+        </div>
 
-    <div class="box-1 w-[300px] h-[500px] bg-brightOrange">
+        <div class="text-transparentColor mt-6 text-left">
+          <p>
+            Choose a sedan for its affordability and excellent fuel economy.
+            Ideal for cruising in the city or on your next road trip.
+          </p>
+        </div>
 
-    </div>
+        <button
+          class="duration-300 hover:-translate-y-1 hover:scale-110 transition ease-in-out delay-150 rounded-full bg-veryLightGray p-3 w-40 text-brightOrange font-normal mt-28 sm:mt-16"
+        >
+          Learn More
+        </button>
+      </div>
 
-    <div class="box-2 w-[300px] h-[500px] bg-darkCyan">
+      <!-- SUVS -->
+      <div class="box-2 w-[300px] h-[500px] sm:h-[450px] bg-darkCyan p-8">
+        <div class="icon">
+          <img src="images/icon-suvs.svg" alt="icon" />
+        </div>
 
-    </div>
+        <div class="heading text-4xl font-bigShoulder text-veryLightGray mt-10">
+          <h1>SUVS</h1>
+        </div>
 
-    <div class="box-3 w-[300px] h-[500px] bg-veryDarkCyan">
+        <div class="text-transparentColor mt-6 text-left">
+          <p>
+            Take an SUV for its spacious interior, power, and versatility.
+            Perfect for your next family vacation and off-road adventures.
+          </p>
+        </div>
 
-    </div>
+        <button
+          class="duration-300 hover:-translate-y-1 hover:scale-110 transition ease-in-out delay-150 rounded-full bg-veryLightGray p-3 w-40 text-darkCyan font-normal mt-28 sm:mt-16"
+        >
+          Learn More
+        </button>
+      </div>
 
-  </main>
-  
-  <!-- Sedans
-  Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
-  or on your next road trip.
+      <!-- LUXURY -->
+      <div
+        class="box-3 w-[300px] h-[500px] sm:h-[450px] bg-veryDarkCyan sm:rounded-b-lg lg:rounded-bl-none lg:rounded-r-lg p-8"
+      >
+        <div class="icon">
+          <img src="images/icon-luxury.svg" alt="icon" />
+        </div>
 
-  SUVs
-  Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
-  and off-road adventures.
+        <div class="heading text-4xl font-bigShoulder text-veryLightGray mt-10">
+          <h1>LUXURY</h1>
+        </div>
 
-  Luxury
-  Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
-  rental and arrive in style.
-  
+        <div class="text-transparentColor mt-6 text-left">
+          <p>
+            Cruise in the best car brands without the bloated prices. Enjoy the
+            enhanced comfort of a luxury rental and arrive in style.
+          </p>
+        </div>
+
+        <button
+          class="duration-300 hover:-translate-y-1 hover:scale-110 transition ease-in-out delay-150 rounded-full bg-veryLightGray p-3 w-40 text-veryDarkCyan font-normal mt-28 sm:mt-16"
+        >
+          Learn More
+        </button>
+      </div>
+    </main>
+    
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div> -->
-</body>
+  </div>
+  </body>
 </html>
