@@ -39,4 +39,4 @@ Users should be able to:
 ## Author
 
 - Website - [Quintin Latimore](https://www.quintin-latimore.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/quintin156)
+- Frontend Mentor - [quintin156](https://www.frontendmentor.io/profile/quintin156)
