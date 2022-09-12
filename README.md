@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/quintin156/3-Column-Preview-Component]
+- Live Site URL: [https://quintin156.github.io/3-Column-Preview-Component/]
 
 ### Built with
 
